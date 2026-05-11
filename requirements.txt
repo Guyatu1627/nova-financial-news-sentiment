@@ -1,6 +1,7 @@
-pandas,
-numpy,
-matplotlib,
-seaborn,
-textblob, 
-scripy
+pandas
+numpy
+matplotlib
+seaborn
+textblob
+scipy
+yfinance

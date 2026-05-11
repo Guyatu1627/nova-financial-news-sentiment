@@ -1,20 +1,7 @@
-# Data files (Too large for GitHub)
+# Data and Environments
 data/
-*.csv
-
-# Virtual Environment
 venv/
 .venv/
-env/
-
-# Python cache
 __pycache__/
-*.py[cod]
-*$py.class
-
-# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-
-# OS specific files
 .DS_Store
-Thumbs.db
