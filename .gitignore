@@ -1,7 +1,21 @@
-# Data and Environments
-data/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 venv/
 .venv/
-__pycache__/
+.env
+
+# Jupyter
 .ipynb_checkpoints/
-.DS_Store
+*/.ipynb_checkpoints/*
+
+# IDEs
+.vscode/
+.idea/
+
+# Data (Comment out the line below if you WANT to push data to GitHub)
+# data/ 
+
+# Only ignore very large files specifically if needed
+# data/raw_analyst_ratings.csv
