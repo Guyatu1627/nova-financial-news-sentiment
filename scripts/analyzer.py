@@ -24,3 +24,19 @@ class FinancialAnalyzer:
             return 'Negative'
         else:
             return 'Neutral'
+        
+    @staticmethod
+    def calculate_technical_indicators(df):
+        """Tak 3: Compute Daily Returns and SMAs."""
+        # Ensure date is sorted
+        df['Date'] = pd.to_datetime(df['Date'])
+        df = df.sort_values('Date')
+
+        # 1. Daily Percentage Change
+        df['Daily_Return'] = df['Close'].pct_change()
+
+        # 2. 7-Day & 21-Day Moving Averages
+        df['SMA_7'] = df['Close'].rolling(window=7).mean()
+        df['SMA_21'] = df['Close'].rolling(window=21).mean()
+
+        return df
