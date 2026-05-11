@@ -1,21 +1,17 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+# Python Virtual Environments
 venv/
 .venv/
-.env
+env/
+__pycache__/
+*.py[cod]
 
-# Jupyter
+# Jupyter Notebooks
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/*
 
-# IDEs
+# IDE settings
 .vscode/
 .idea/
 
-# Data (Comment out the line below if you WANT to push data to GitHub)
-# data/ 
-
-# Only ignore very large files specifically if needed
-# data/raw_analyst_ratings.csv
+# DATA FOLDER 
+# We are NOT ignoring data/ so that Streamlit Cloud can find the CSVs
+# If files are too large (>100MB), you will need to upload a smaller sample.
